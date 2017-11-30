@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6" style="align-items: center">
+      <div class="row">
+        <img src="/images/logo.jpg" align="center">
+        <h1 align="center"> My Exam Result</h1>
+      </div>
+      <div class="row" style="align-items: center">
+        <h3>Complete your signup </h3>
+        <form method="post" action="/signup">
+          <label for="rolln">Roll Number: </label>
+          <input type="text" name="rolln" value="<%=rolln%>"><br>
+          <label for="pass">Password: </label>
+          <input type="password" name="pass"><br>
+          <label for="repeatpass">Repeat Password: </label>
+          <input type="password" name="repeatpass"><br>
+          <input type="submit">
+        </form>
+      </div>
+      <div class="row">
+        <h3> Already have an account?</h3>
+        <a href="/login">Go to Login</a>
+      </div>
+
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  </head>
+  <body>
+      <h1>Error: <%=err%></h1>
+      <h3><%=suggestion%></h3>
+      <p>Redirecting you to <%=pageName%> Page</p>
+  <script>
+    window.setTimeout(function(){
+      window.location.href = "<%=pageLink%>";
+    }, 5000);
+  </script>
+ </body>
+</html>

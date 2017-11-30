@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6" style="align-items: center">
+      <div class="row">
+        <img src="/images/logo.jpg">
+        <h1 align="center"> My Exam Result</h1>
+      </div>
+      <div class="row" style="align-items: center">
+        <h3>Log in </h3>
+        <form method="post" action="/login">
+          <label for="rolln">Roll Number: </label>
+          <input type="text" name="rolln"><br>
+          <label for="pass">Password: </label>
+          <input type="password" name="pass"><br>
+          <input type="submit">
+        </form>
+      </div>
+      <div class="row">
+        <h3> Is this your first time?</h3>
+        <h4>Enter Your roll number to gain access</h4>
+        <form method="post" action="/login">
+          <label for="firstTimeRoll">Roll number: </label>
+          <input type="text" name="firstTimeRoll">
+          <input type="submit">
+        </form>
+      </div>
+
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+
+  </body>
+</html>
